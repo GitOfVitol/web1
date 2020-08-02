@@ -25,13 +25,16 @@
     
     <body>
         <h1><a href="index.html">WEB</a></h1>
-        <input type="button" value="Night" onclick="
-            document.querySelector('body').style.backgroundColor='black';
-            document.querySelector('body').style.color='white';
-        ">
-        <input type="button" value="Day" onclick="
-            document.querySelector('body').style.backgroundColor='white';
-            document.querySelector('body').style.color='black';        
+        <input id="btn_night_day" type="button" value="Night" onclick="
+            if(document.querySelector('#btn_night_day').value==='Night'){
+                document.querySelector('body').style.backgroundColor='black';
+                document.querySelector('body').style.color='white'; 
+                document.querySelector('#btn_night_day').value='Day'      
+            }else{
+                document.querySelector('body').style.backgroundColor='white';
+                document.querySelector('body').style.color='black';                  document.querySelector('#btn_night_day').value='Day'      
+                document.querySelector('#btn_night_day').value='Night'      
+            }
         ">
         <ol>
             <li><a href="1.html">HTML</a></li>
