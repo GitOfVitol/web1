@@ -30,11 +30,24 @@
             if(this.value==='Night'){
                 target.style.backgroundColor='black';
                 target.style.color='white'; 
-                this.value='Day'      
+                this.value='Day'
+
+                var alist=document.querySelectorAll('a');
+                var i=0;
+                while(i<alist.length){
+                    alist[i].style.color='powderblue';
+                    i++;
+                }      
             }else{
                 target.style.backgroundColor='white';
                 target.style.color='black';                      
-                this.value='Night'      
+                this.value='Night';
+                var alist=document.querySelectorAll('a');
+                var i=0;
+                while(i<alist.length){
+                    alist[i].style.color='blue';
+                    i++;
+                }      
             }
         ">
         <ol>
